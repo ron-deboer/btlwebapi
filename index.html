@@ -9,6 +9,19 @@
     <title>title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <script>
+      window.onload = function() {
+          fetch('http://45.79.236.39').then(resp => {
+              const demoDiv = document.getElementById('demo');
+              demoDiv.innerHTML = resp;     
+          });
+    }
+      
+      
+   
+      
+    </script>
+    
   </head>
 
 
@@ -16,7 +29,7 @@
 
     <h1> testing ... </h1>
     
-    <iframe src="http://45.79.236.39" />
+    <div id="demo"></div>
     
   </body>
 
